@@ -19,3 +19,5 @@ Praktikum dilakukan dengan analisis 2 gambar yang berbeda yaitu kuda dan pemanda
 5. hasil command prompt 
 
 ![4](https://user-images.githubusercontent.com/99699435/224772254-d520ddb2-a8d1-4b06-b0ac-2e16d4acd3cd.png)
+6. analisis tabel kompresi 
+
