@@ -13,3 +13,5 @@ Praktikum dilakukan dengan analisis 2 gambar yang berbeda yaitu kuda dan pemanda
 
 3. membuat folder STEGO 
 
+![3](https://user-images.githubusercontent.com/99699435/224771815-b40310c8-dbff-4b21-8035-23490bdc9968.png)
+ 
