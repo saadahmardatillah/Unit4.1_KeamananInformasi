@@ -21,3 +21,6 @@ Praktikum dilakukan dengan analisis 2 gambar yang berbeda yaitu kuda dan pemanda
 ![4](https://user-images.githubusercontent.com/99699435/224772254-d520ddb2-a8d1-4b06-b0ac-2e16d4acd3cd.png)
 6. analisis tabel kompresi 
 
+
+![5](https://user-images.githubusercontent.com/99699435/224772847-e76d3b74-f45f-44bd-8f3d-84318a4abb17.png) 
+
