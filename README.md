@@ -71,10 +71,64 @@ Dalam output tail -f, ketika ada perubahan pada file, maka perintah akan terus b
 
 5. Membaca file log dan syslog
 
-8. Membuat daftar file syslog yang lebih lama 
-9. Pemahaman file log dan journalctl
-10. Menjalankan perintah journal --uct 
-11. Menjalankan perintah journal -b
-12. Penggunaan journalactl untuk menentukan layanan dan kerangkan waktu entri log
-13. Menjalankan perintah journal -k 
-14. Menjalankan perintah journal -f
+![12](https://user-images.githubusercontent.com/99699435/224777593-8854032e-61fc-4f29-ac7c-a8dbd3510133.png)
+
+Analisis mengenai mengapa perintah cat harus dijalankan sebagai root, hal ini dikarenakan: Perintah cat tidak harus dijalankan sebagai root, karena perintah ini biasanya hanya digunakan untuk membaca isi file teks dan tidak memerlukan akses ke hak istimewa root. Namun, dalam beberapa kasus, cat harus dijalankan sebagai root, seperti:
+a. Membaca file dengan hak akses terbatas
+b. Mengakses file yang terletak di direktori sistem 
+Namun, dalam kondisi umum, sebaiknya perintah cat dijalankan dengan hak akses pengguna biasa, kecuali jika ada kebutuhan tertentu untuk menggunakan hak akses root. Hal ini untuk menjaga keamanan sistem dan mencegah penggunaan hak akses root yang tidak perlu.
+
+6. Membuat daftar file syslog yang lebih lama 
+
+![13](https://user-images.githubusercontent.com/99699435/224777632-2add423d-43bb-4c2f-a720-f889200d2c84.png)
+
+Percobaan ini hampir sama dengan sebelumnya perbedaannya hanya pada penggunakan perintah cat dalam membuat daftar file syslog yang lebih lama. Disini saya berhasil menjalankan perintah pada terminal dan mendapatkan output sesuai intruksi kerja. Analisis dari pertanyaan mengapa kita harus mengsinkronisasikan waktu dan tanggal komputer dengan benar adalah sebagai berikut: 
+a.	Menjaga akurasi waktu
+b.	Memudahkan manajemen jaringan
+c.	Mencegah kegagalan sertifikat
+d.	Mencegah kerentanan keamanan dapat mencegah serangan semacam ini.
+Dengan demikian, mensinkronkan waktu dan tanggal pada komputer dengan benar sangat penting untuk memastikan akurasi waktu, kelancaran jaringan, keamanan, dan fungsi aplikasi.
+
+7. Pemahaman file log dan journalctl
+
+![14](https://user-images.githubusercontent.com/99699435/224777641-c8aea5ce-6902-4c39-97dc-4268b94fd7a8.png)
+
+Perintah journalctl adalah utilitas yang digunakan untuk membaca log sistem di sistem operasi Linux yang menggunakan sistem logging journald. Dengan perintah ini, kita dapat membaca, menampilkan, dan menganalisis log sistem yang disimpan oleh journald. Beberapa penggunaan dari perintah journalctl adalah sebagai berikut:
+a.Melihat log sistem secara keseluruhan
+b.	Mencari log berdasarkan kriteria tertentu
+c.	Menampilkan log dengan format yang berbeda
+d.	Melihat log pada unit service tertentu
+e.	Membaca log pada waktu tertentu
+Perintah journalctl sangat berguna untuk menganalisis masalah sistem dan mencari tahu penyebab terjadinya masalah. Dengan perintah ini, kita dapat melihat log sistem dengan cara yang lebih terstruktur dan mudah dibaca. Namun, perintah ini hanya dapat digunakan pada sistem operasi Linux yang menggunakan journald sebagai sistem logging.
+
+8. Menjalankan perintah journal --uct 
+
+![15](https://user-images.githubusercontent.com/99699435/224777800-9bdc4b21-2a99-4393-903d-370e8e9db4d0.png)
+
+Penggunaan perintah jorunalctl –utc adalah untuk menampilkan log sistem dalam waktu UTC (Coordinated Universal Time). UTC adalah standar waktu internasional yang digunakan sebagai referensi untuk mengukur waktu di seluruh dunia. Dengan menggunakan perintah journalctl --utc, waktu yang ditampilkan dalam log sistem akan disesuaikan dengan waktu UTC, sehingga memudahkan analisis log sistem dalam konteks waktu global.
+
+9. Menjalankan perintah journal -b
+
+![16](https://user-images.githubusercontent.com/99699435/224777804-11199a5e-d330-45b0-a4e2-44638558849f.png)
+
+Perintah journalctl -b digunakan untuk menampilkan entri log dari sesi boot terakhir pada sistem Linux. Argumen -b menunjukkan bahwa kita ingin menampilkan log sesi boot terakhir, dan jika argumen tersebut tidak ditentukan, secara default akan menampilkan log untuk sesi saat ini. Ketika sistem Linux boot, jurnal sistem menyimpan semua entri log dalam sesi boot tersebut. Dengan menggunakan perintah journalctl -b, kita dapat menampilkan semua entri log yang dihasilkan selama sesi boot terakhir.
+
+10. Penggunaan journalactl untuk menentukan layanan dan kerangkan waktu entri log
+
+![17](https://user-images.githubusercontent.com/99699435/224777807-d504fa1c-8d49-417b-a446-9002f8ced92b.png)
+
+Analisis dari uji coba ini adalah Perintah journalctl dapat digunakan untuk menentukan layanan dan kerangka waktu entri log dengan menggunakan beberapa argumen atau opsi. Dengan menggunakan argumen atau opsi ini, pengguna dapat menentukan layanan (dengan argumen -u) dan kerangka waktu (dengan opsi --since, --until, --since today, --since yesterday, atau --since "x time ago") untuk menampilkan entri log yang dibutuhkan. Disini saya menggunakan perintah analis@secOps ~$ sudo journalctl -u nginx.service –since today, yang berarti saya ingin menampilkan entri log untuk layanan tertentu dan menampilkan entri log yang terjadi hari ini.  
+
+11. Menjalankan perintah journal -k 
+
+![18](https://user-images.githubusercontent.com/99699435/224777810-8f1e1302-05a7-45ab-b15c-492b86d7b34b.png)
+
+Perintah journalctl -k digunakan untuk menampilkan entri log dari kernel. Argumen -k menunjukkan bahwa kita ingin menampilkan log kernel, dan jika argumen tersebut tidak ditentukan, secara default akan menampilkan log untuk jurnal sistem. Ketika sistem Linux berjalan, kernel menghasilkan entri log yang sangat penting untuk memantau kinerja dan keamanan sistem. Dengan menggunakan perintah journalctl -k, kita dapat menampilkan semua entri log yang dihasilkan oleh kernel sejak sistem dimulai. 
+
+12. Menjalankan perintah journal -f
+
+![19](https://user-images.githubusercontent.com/99699435/224777812-3d407368-bfb2-47cd-93d1-a7e490d03f5b.png)
+
+Perintah journalctl -f digunakan untuk memantau secara langsung entri log yang baru dibuat pada sistem Linux. Argumen -f menunjukkan bahwa kita ingin memantau entri log secara langsung (real-time), dan jika argumen tersebut tidak ditentukan, secara default akan menampilkan seluruh entri log dalam jurnal sistem.
+
+Ketika kita menjalankan perintah journalctl -f, terminal akan menampilkan entri log baru yang muncul pada jurnal sistem secara langsung. Ini dapat sangat berguna untuk memantau aktivitas sistem secara real-time. 
