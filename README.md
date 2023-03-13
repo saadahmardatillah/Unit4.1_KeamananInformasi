@@ -32,14 +32,18 @@ Log Server adalah file log yang dibuat dan dipelihara oleh server secara otomati
 
 ## Penyelesaian analisis Log Server
 1. Membaca file log cat
-2. Membaca file log more
-3. Membaca file log less
-4. Membaca file log tail dan tail -f
-5. Membaca file log dan syslog
-6. Membuat daftar file syslog yang lebih lama 
-7. Pemahaman file log dan journalctl
-8. Menjalankan perintah journal --uct 
-9. Menjalankan perintah journal -b
-10. Penggunaan journalactl untuk menentukan layanan dan kerangkan waktu entri log
-11. Menjalankan perintah journal -k 
-12. Menjalankan perintah journal -f
+
+![6](https://user-images.githubusercontent.com/99699435/224777296-01e54525-a9ab-4174-bfac-3baccb89ccec.png)
+
+
+3. Membaca file log more
+4. Membaca file log less
+5. Membaca file log tail dan tail -f
+6. Membaca file log dan syslog
+7. Membuat daftar file syslog yang lebih lama 
+8. Pemahaman file log dan journalctl
+9. Menjalankan perintah journal --uct 
+10. Menjalankan perintah journal -b
+11. Penggunaan journalactl untuk menentukan layanan dan kerangkan waktu entri log
+12. Menjalankan perintah journal -k 
+13. Menjalankan perintah journal -f
