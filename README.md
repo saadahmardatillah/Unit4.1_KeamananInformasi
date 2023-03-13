@@ -60,10 +60,9 @@ file sesuai dengan teori less adalah utilitas baris perintah yang menampilkan ko
 
 4. Membaca file log tail dan tail -f
 
-![9](https://user-images.githubusercontent.com/99699435/224777454-f4892996-4429-4284-
+![9](https://user-images.githubusercontent.com/99699435/224777454-f4892996-4429-4284-bc36-bfa18612f6ff.png)
 
 ![10](https://user-images.githubusercontent.com/99699435/224777477-a1ac83db-0493-4b29-bdb0-4b33eb65fc42.png)
-bc36-bfa18612f6ff.png)
 
 Pada analisis perbedaan output dari tal dan tail -f sebagai berikut: 
 1.	Output tail: digunakan untuk menampilkan beberapa baris terakhir dari sebuah file teks. Ketika Anda menjalankan perintah tail, kita akan melihat isi file yang terakhir dibaca pada saat itu. Hal ini sesuai dengan data yang saya ambil pada terminal. 
