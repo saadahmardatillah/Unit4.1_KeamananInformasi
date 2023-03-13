@@ -35,15 +35,47 @@ Log Server adalah file log yang dibuat dan dipelihara oleh server secara otomati
 
 ![6](https://user-images.githubusercontent.com/99699435/224777296-01e54525-a9ab-4174-bfac-3baccb89ccec.png)
 
+Perintah cat sendiri digunakan  untuk membuat, menggabungkan, atau menampilkan file di layar output standar atau ke file lain, dan banyak lagi. Menjawab pertanyaan dari uji coba pertama adalah sebagai berikut: Menggunakan cat dengan file teks besar memiliki beberapa kelemahan, di antaranya:
+a. Memakan banyak memori
+b.Tidak efisien untuk file besar
+c. Tidak dapat mengedit isi file
+d. Output terlalu banyak
+e. Tidak fleksibel
 
-3. Membaca file log more
-4. Membaca file log less
-5. Membaca file log tail dan tail -f
-6. Membaca file log dan syslog
-7. Membuat daftar file syslog yang lebih lama 
-8. Pemahaman file log dan journalctl
-9. Menjalankan perintah journal --uct 
-10. Menjalankan perintah journal -b
-11. Penggunaan journalactl untuk menentukan layanan dan kerangkan waktu entri log
-12. Menjalankan perintah journal -k 
-13. Menjalankan perintah journal -f
+2. Membaca file log more
+
+![7](https://user-images.githubusercontent.com/99699435/224777364-d2708b05-4902-48eb-a912-2017abf93f52.png)
+
+Dilihat dari fungsinya more digunakan untuk melihat isi suatu file dengan fasilitas melihat isi file dari atas. Dalam menjalankan perintah ini saya berhasil menjalankan pada terminal. Terdapat pertanyaan pada uji coba kedua ini, berikut pembahasan dari pertanyaannya: Meskipun more sangat berguna untuk membaca dan menampilkan isi file teks yang panjang, tetapi ada beberapa kelemahan penggunaan more, di antaranya:
+a. Tidak efisien untuk navigasi mundur
+b. idak fleksibel
+c. Output terlalu banyak
+d. Tidak dapat mengedit isi file
+
+3. Membaca file log less
+
+![8](https://user-images.githubusercontent.com/99699435/224777435-be706e36-e474-4a67-ae88-5918c9c74934.png)
+
+file sesuai dengan teori less adalah utilitas baris perintah yang menampilkan konten file atau output dari suatu perintah dalam satu halaman. Ini mirip dengan perintah more, tetapi memiliki fitur yang lebih maju dan memungkinkan Anda menavigasi maju dan mundur melalui file. Ketika dihubungkan dengan pertanyaan perintah cat tadi, perintah less yang banyak digunakan untuk membuka file yang lebih besar. 
+
+4. Membaca file log tail dan tail -f
+
+![9](https://user-images.githubusercontent.com/99699435/224777454-f4892996-4429-4284-
+
+![10](https://user-images.githubusercontent.com/99699435/224777477-a1ac83db-0493-4b29-bdb0-4b33eb65fc42.png)
+bc36-bfa18612f6ff.png)
+
+Pada analisis perbedaan output dari tal dan tail -f sebagai berikut: 
+1.	Output tail: digunakan untuk menampilkan beberapa baris terakhir dari sebuah file teks. Ketika Anda menjalankan perintah tail, kita akan melihat isi file yang terakhir dibaca pada saat itu. Hal ini sesuai dengan data yang saya ambil pada terminal. 
+2.	Output tail -f: Perintah tail -f memiliki arti yaitu: "follow" atau "mengikuti" digunakan utuk menampilkan isi file teks secara real-time. Ketika saya menjalankan perintah tail -f, saya akan melihat isi file yang sedang terus bertambah seiring dengan penambahan isi file tersebut. Perintah tail -f sangat berguna dalam memantau file log atau file yang terus diperbarui oleh aplikasi.
+Dalam output tail -f, ketika ada perubahan pada file, maka perintah akan terus berjalan secara real-time dan akan menambahkan baris baru ke layar. Sedangkan pada output tail, saya harus menjalankan perintah kembali setiap kali ingin melihat isi file yang terbaru.
+
+5. Membaca file log dan syslog
+
+8. Membuat daftar file syslog yang lebih lama 
+9. Pemahaman file log dan journalctl
+10. Menjalankan perintah journal --uct 
+11. Menjalankan perintah journal -b
+12. Penggunaan journalactl untuk menentukan layanan dan kerangkan waktu entri log
+13. Menjalankan perintah journal -k 
+14. Menjalankan perintah journal -f
