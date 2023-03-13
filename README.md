@@ -2,6 +2,7 @@
 
 ## 1. Analisis STEGO 
 Praktikum dilakukan dengan analisis 2 gambar yang berbeda yaitu kuda dan pemandangan gunung berdasarkan referensi dari Elok. 
+Steganografi merupakan teknik dalam menyembunyika suatu pesan rahasia (hiding message) agar keberadaan atau makna pesan tidak dapat terdeteksi oleh orang lain kecuali oleh pengirim dan penerima pesan. Terdapat tujuh teknik steganografi yaitu : 1) Injection 2) Substitution 3) Tranformasi Domain 4) Spread Spectrum 5) Statistical Method 6) Distortion 7) Cover Generation (Ariyus, 2009). Tujuan dari steganografi adalah merahasiakan atau menyembunyikan keberadaan dari sebuah pesan yang tersembunyi atau sebuah informasi. Steganografi dapat digunakan untuk berbagai alasan, seperti alasan baik ataupun sebaliknya “alasan tidak baik”.
 ## Penyelesaian analisis STEGO:
 1. mahasiswa melakukan download file stego 
 
@@ -25,3 +26,5 @@ Praktikum dilakukan dengan analisis 2 gambar yang berbeda yaitu kuda dan pemanda
 ![5](https://user-images.githubusercontent.com/99699435/224772847-e76d3b74-f45f-44bd-8f3d-84318a4abb17.png) 
 
 Pada kedua gambar terlihat size mengalami perubahan, ketika di download dari elok dan se sudah di embed melalui STEGO. Terjadi perubahan yang signifikan pada ukuran hasil keluaran JPG, hal ini dapat terjadi setelah melalui proses steganografi yang disebabkan adanya penyususan bit dan struktur JPG yang tinggi pada tingkat error nya. Besarnya file JPG dikarenakan memanfaatkan metode kompresi dalam menjaga kualitas gambar dengan teknik redundansi data yang lebih sedikit. Dari data hasil Analisa diatas terlihat nilai faktor kompresi horses dan Everest memiliki nilai faktor kompresi yang tinggi, karena nilai horses dan Everest yang kecil berubah jauh lebih besar ketika terjadinya penyisipan pesan atau text. ukuran file stego (file yang berisi pesan tersembunyi) biasanya akan lebih besar daripada ukuran file cover (file yang digunakan untuk menyembunyikan pesan) karena pesan yang tersembunyi akan menambah ukuran file tersebut.  Dalam konteks steganografi, pesan tersembunyi dalam file stego mungkin memiliki pola atau struktur tertentu yang dapat dieksploitasi oleh algoritma kompresi untuk mengurangi ukuran file.
+
+## 2. Analisis LOG Server 
