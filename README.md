@@ -44,7 +44,7 @@ e. Tidak fleksibel
 
 2. Membaca file log more
 
-![7](https://user-images.githubusercontent.com/99699435/224777364-d2708b05-4902-48eb-a912-2017abf93f52.png)
+![8](https://user-images.githubusercontent.com/99699435/224777435-be706e36-e474-4a67-ae88-5918c9c74934.png)
 
 Dilihat dari fungsinya more digunakan untuk melihat isi suatu file dengan fasilitas melihat isi file dari atas. Dalam menjalankan perintah ini saya berhasil menjalankan pada terminal. Terdapat pertanyaan pada uji coba kedua ini, berikut pembahasan dari pertanyaannya: Meskipun more sangat berguna untuk membaca dan menampilkan isi file teks yang panjang, tetapi ada beberapa kelemahan penggunaan more, di antaranya:
 a. Tidak efisien untuk navigasi mundur
@@ -54,13 +54,12 @@ d. Tidak dapat mengedit isi file
 
 3. Membaca file log less
 
-![8](https://user-images.githubusercontent.com/99699435/224777435-be706e36-e474-4a67-ae88-5918c9c74934.png)
+![9](https://user-images.githubusercontent.com/99699435/224777454-f4892996-4429-4284-bc36-bfa18612f6ff.png)
 
 file sesuai dengan teori less adalah utilitas baris perintah yang menampilkan konten file atau output dari suatu perintah dalam satu halaman. Ini mirip dengan perintah more, tetapi memiliki fitur yang lebih maju dan memungkinkan Anda menavigasi maju dan mundur melalui file. Ketika dihubungkan dengan pertanyaan perintah cat tadi, perintah less yang banyak digunakan untuk membuka file yang lebih besar. 
 
 4. Membaca file log tail dan tail -f
 
-![9](https://user-images.githubusercontent.com/99699435/224777454-f4892996-4429-4284-bc36-bfa18612f6ff.png)
 
 ![10](https://user-images.githubusercontent.com/99699435/224777477-a1ac83db-0493-4b29-bdb0-4b33eb65fc42.png)
 
